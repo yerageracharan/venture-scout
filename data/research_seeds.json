@@ -1,0 +1,374 @@
+[
+  {
+    "name": "Astor",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Fintech / WealthTech",
+    "stage": "Seed",
+    "round_amount_usd": 5000000,
+    "round_date": "2026-04-23",
+    "description": "AI-powered investment advisory platform; funding announcement says the capital will expand product, engineering and growth.",
+    "investors": [
+      "Monashees (lead)",
+      "Y Combinator",
+      "Goodwater Capital",
+      "Gilgamesh Ventures",
+      "468 Capital"
+    ],
+    "funding_evidence_status": "announced_verified",
+    "sources": [
+      {
+        "title": "Astor raises $5M seed round to build a personal investing agent",
+        "url": "https://www.astor.app/blog/astor-raises-5m-seed",
+        "publisher": "Astor",
+        "published_at": "2026-04-23",
+        "excerpt": "AI-powered investment advisory platform; funding announcement says the capital will expand product, engineering and growth.",
+        "source_type": "company_site"
+      }
+    ],
+    "notes": "Source-backed funding announcement; independently validate product, traction, terms and all investment claims."
+  },
+  {
+    "name": "CodeIntegrity",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Cybersecurity / AI infrastructure",
+    "stage": "Seed",
+    "round_amount_usd": 5000000,
+    "round_date": "2026-05-27",
+    "description": "Runtime security and control layer for enterprise AI agents operating across tools, data and sensitive systems.",
+    "investors": [
+      "SYN Ventures (lead)",
+      "Antler",
+      "Boost VC"
+    ],
+    "funding_evidence_status": "announced_verified",
+    "sources": [
+      {
+        "title": "CodeIntegrity Raises $5M in Seed Funding",
+        "url": "https://www.codeintegrity.ai/blog/codeintegrity-seed-round",
+        "publisher": "CodeIntegrity",
+        "published_at": "2026-05-27",
+        "excerpt": "Runtime security and control layer for enterprise AI agents operating across tools, data and sensitive systems.",
+        "source_type": "company_site"
+      }
+    ],
+    "notes": "Source-backed funding announcement; independently validate product, traction, terms and all investment claims."
+  },
+  {
+    "name": "Katalyze AI",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Life sciences / AI infrastructure",
+    "stage": "Seed",
+    "round_amount_usd": 10500000,
+    "round_date": "2026-07-06",
+    "description": "AI infrastructure for life sciences workflows; company announced a $10.5M seed round.",
+    "investors": [
+      "Bonfire Ventures (lead)",
+      "Inovia Capital",
+      "Ripple",
+      "Alumni Ventures"
+    ],
+    "funding_evidence_status": "announced_verified",
+    "sources": [
+      {
+        "title": "Katalyze AI Announces $10.5M Seed Round",
+        "url": "https://www.katalyzeai.com/newsroom/katalyze-ai-announces-usd10-5m-seed-round",
+        "publisher": "Katalyze AI",
+        "published_at": "2026-07-06",
+        "excerpt": "AI infrastructure for life sciences workflows; company announced a $10.5M seed round.",
+        "source_type": "company_site"
+      }
+    ],
+    "notes": "Source-backed funding announcement; independently validate product, traction, terms and all investment claims."
+  },
+  {
+    "name": "Orthogonal",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "AI infrastructure / Developer tools",
+    "stage": "Seed",
+    "round_amount_usd": 4300000,
+    "round_date": "2026-06-25",
+    "description": "AI agent service discovery, orchestration and payments infrastructure.",
+    "investors": [
+      "Pantera Capital (lead)",
+      "Y Combinator",
+      "Pioneer Fund",
+      "Decasonic",
+      "Blast",
+      "Outbound",
+      "Surreal"
+    ],
+    "funding_evidence_status": "announced_verified",
+    "sources": [
+      {
+        "title": "Orthogonal raises $4.3M seed for AI agent service discovery, orchestration and payments",
+        "url": "https://www.prnewswire.com/news-releases/orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestration-and-payments-across-the-internet-302806969.html",
+        "publisher": "PR Newswire",
+        "published_at": "2026-06-25",
+        "excerpt": "AI agent service discovery, orchestration and payments infrastructure.",
+        "source_type": "company_site"
+      }
+    ],
+    "notes": "Source-backed funding announcement; independently validate product, traction, terms and all investment claims."
+  },
+  {
+    "name": "Decimal AI",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Enterprise AI / Customer engineering",
+    "stage": "Seed",
+    "round_amount_usd": 4000000,
+    "round_date": "2026-09-15",
+    "description": "Customer engineering platform for software companies; company announced a $4M seed round.",
+    "investors": [
+      "Khosla Ventures (co-lead)",
+      "Kearny Jackson (co-lead)",
+      "Atlassian Ventures",
+      "Weekend Fund"
+    ],
+    "funding_evidence_status": "announced_verified",
+    "sources": [
+      {
+        "title": "Decimal AI announces $4 million seed round",
+        "url": "https://www.prnewswire.com/news-releases/decimal-ai-announces-4-million-seed-round-to-bring-customer-engineering-to-software-companies-302879089.html",
+        "publisher": "PR Newswire",
+        "published_at": "2026-09-15",
+        "excerpt": "Customer engineering platform for software companies; company announced a $4M seed round.",
+        "source_type": "company_site"
+      }
+    ],
+    "notes": "Source-backed funding announcement; independently validate product, traction, terms and all investment claims."
+  },
+  {
+    "name": "Sans Strings Studio",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Gaming / Media / Technology",
+    "stage": "Seed",
+    "round_amount_usd": 5500000,
+    "round_date": "2026-03-27",
+    "description": "Gaming and media technology studio; funding announcement lists a $5.5M seed round.",
+    "investors": [
+      "Red River West (lead)",
+      "a16z speedrun",
+      "Sisu Game Ventures",
+      "Kima Ventures"
+    ],
+    "funding_evidence_status": "announced_verified",
+    "sources": [
+      {
+        "title": "Sans Strings Studio raises seed round",
+        "url": "https://sansstrings.studio/sans-strings-studio-raises-seed-round/",
+        "publisher": "Sans Strings Studio",
+        "published_at": "2026-03-27",
+        "excerpt": "Gaming and media technology studio; funding announcement lists a $5.5M seed round.",
+        "source_type": "company_site"
+      }
+    ],
+    "notes": "Source-backed funding announcement; independently validate product, traction, terms and all investment claims."
+  },
+  {
+    "name": "Catalyx Space",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Space infrastructure / Logistics",
+    "stage": "Seed",
+    "round_amount_usd": 5400000,
+    "round_date": "2025-10-30",
+    "description": "Space infrastructure and logistics startup; company funding page records a $5.4M seed financing.",
+    "investors": [
+      "Outlander VC"
+    ],
+    "funding_evidence_status": "announced_verified",
+    "sources": [
+      {
+        "title": "Catalyx Space funding",
+        "url": "https://www.catalyx.space/funding",
+        "publisher": "Catalyx Space",
+        "published_at": "2025-10-30",
+        "excerpt": "Space infrastructure and logistics startup; company funding page records a $5.4M seed financing.",
+        "source_type": "company_site"
+      }
+    ],
+    "notes": "Source-backed funding announcement; independently validate product, traction, terms and all investment claims."
+  },
+  {
+    "name": "BioStack",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Health / AI infrastructure",
+    "stage": "Seed",
+    "round_amount_usd": 9500000,
+    "round_date": "2026-10-23",
+    "description": "Secondary-roundup lead. Verify company identity, round stage, amount, San Francisco location and primary announcement.",
+    "investors": [
+      "Peak XV",
+      "Afore Capital",
+      "DCVC"
+    ],
+    "funding_evidence_status": "announced_unverified",
+    "sources": [
+      {
+        "title": "Secondary funding roundup candidate",
+        "url": "https://fractionalcmoboard.com/san-francisco-startups-that-just-raised",
+        "publisher": "Fractional CMO Board (secondary source)",
+        "published_at": "2026-10-23",
+        "excerpt": "Secondary-roundup lead. Verify company identity, round stage, amount, San Francisco location and primary announcement.",
+        "source_type": "secondary"
+      }
+    ],
+    "notes": "Unverified secondary-source research lead; exclude from verified round-size and investor analytics pending primary-source confirmation."
+  },
+  {
+    "name": "Watchtower Labs",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Defense / AI software",
+    "stage": "Seed",
+    "round_amount_usd": 35000000,
+    "round_date": "2026-10-22",
+    "description": "Secondary-roundup lead. Do not treat the reported $35M as verified until primary sources are located.",
+    "investors": [
+      "Founders Fund"
+    ],
+    "funding_evidence_status": "announced_unverified",
+    "sources": [
+      {
+        "title": "Secondary funding roundup candidate",
+        "url": "https://fractionalcmoboard.com/san-francisco-startups-that-just-raised",
+        "publisher": "Fractional CMO Board (secondary source)",
+        "published_at": "2026-10-22",
+        "excerpt": "Secondary-roundup lead. Do not treat the reported $35M as verified until primary sources are located.",
+        "source_type": "secondary"
+      }
+    ],
+    "notes": "Unverified secondary-source research lead; exclude from verified round-size and investor analytics pending primary-source confirmation."
+  },
+  {
+    "name": "Dream",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Built-world AI / PropTech",
+    "stage": "Seed",
+    "round_amount_usd": 17000000,
+    "round_date": "2026-10-29",
+    "description": "Secondary-roundup lead. Verify whether financing is seed-stage and confirm HQ, amount and investors.",
+    "investors": [
+      "Andreessen Horowitz",
+      "SV Angel"
+    ],
+    "funding_evidence_status": "announced_unverified",
+    "sources": [
+      {
+        "title": "Secondary funding roundup candidate",
+        "url": "https://fractionalcmoboard.com/san-francisco-startups-that-just-raised",
+        "publisher": "Fractional CMO Board (secondary source)",
+        "published_at": "2026-10-29",
+        "excerpt": "Secondary-roundup lead. Verify whether financing is seed-stage and confirm HQ, amount and investors.",
+        "source_type": "secondary"
+      }
+    ],
+    "notes": "Unverified secondary-source research lead; exclude from verified round-size and investor analytics pending primary-source confirmation."
+  },
+  {
+    "name": "Northstar Security",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Cybersecurity / AI",
+    "stage": "Seed",
+    "round_amount_usd": 7000000,
+    "round_date": "2026-10-28",
+    "description": "Secondary-roundup lead. Primary company/investor announcement has not been checked.",
+    "investors": [],
+    "funding_evidence_status": "announced_unverified",
+    "sources": [
+      {
+        "title": "Secondary funding roundup candidate",
+        "url": "https://fractionalcmoboard.com/san-francisco-startups-that-just-raised",
+        "publisher": "Fractional CMO Board (secondary source)",
+        "published_at": "2026-10-28",
+        "excerpt": "Secondary-roundup lead. Primary company/investor announcement has not been checked.",
+        "source_type": "secondary"
+      }
+    ],
+    "notes": "Unverified secondary-source research lead; exclude from verified round-size and investor analytics pending primary-source confirmation."
+  },
+  {
+    "name": "PreScalar",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "Robotics / Hardware",
+    "stage": "Seed",
+    "round_amount_usd": 7000000,
+    "round_date": "2026-10-22",
+    "description": "Secondary-roundup lead. Verify funding stage, location and announced capital from primary sources.",
+    "investors": [],
+    "funding_evidence_status": "announced_unverified",
+    "sources": [
+      {
+        "title": "Secondary funding roundup candidate",
+        "url": "https://fractionalcmoboard.com/san-francisco-startups-that-just-raised",
+        "publisher": "Fractional CMO Board (secondary source)",
+        "published_at": "2026-10-22",
+        "excerpt": "Secondary-roundup lead. Verify funding stage, location and announced capital from primary sources.",
+        "source_type": "secondary"
+      }
+    ],
+    "notes": "Unverified secondary-source research lead; exclude from verified round-size and investor analytics pending primary-source confirmation."
+  },
+  {
+    "name": "Different",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "AI / Marketing software",
+    "stage": "Seed",
+    "round_amount_usd": 48000000,
+    "round_date": "2026-10-20",
+    "description": "Secondary-roundup lead. Verify whether $48M is a seed round or another financing category.",
+    "investors": [
+      "General Catalyst",
+      "Lightspeed",
+      "Haystack"
+    ],
+    "funding_evidence_status": "announced_unverified",
+    "sources": [
+      {
+        "title": "Secondary funding roundup candidate",
+        "url": "https://fractionalcmoboard.com/san-francisco-startups-that-just-raised",
+        "publisher": "Fractional CMO Board (secondary source)",
+        "published_at": "2026-10-20",
+        "excerpt": "Secondary-roundup lead. Verify whether $48M is a seed round or another financing category.",
+        "source_type": "secondary"
+      }
+    ],
+    "notes": "Unverified secondary-source research lead; exclude from verified round-size and investor analytics pending primary-source confirmation."
+  },
+  {
+    "name": "Lightsprint",
+    "hq_city": "San Francisco",
+    "hq_region": "CA",
+    "sector": "AI / Developer tools",
+    "stage": "Seed",
+    "round_amount_usd": 6100000,
+    "round_date": "2026-10-19",
+    "description": "Secondary-roundup lead. Verify round stage, location and announced capital from primary sources.",
+    "investors": [
+      "645 Ventures"
+    ],
+    "funding_evidence_status": "announced_unverified",
+    "sources": [
+      {
+        "title": "Secondary funding roundup candidate",
+        "url": "https://fractionalcmoboard.com/san-francisco-startups-that-just-raised",
+        "publisher": "Fractional CMO Board (secondary source)",
+        "published_at": "2026-10-19",
+        "excerpt": "Secondary-roundup lead. Verify round stage, location and announced capital from primary sources.",
+        "source_type": "secondary"
+      }
+    ],
+    "notes": "Unverified secondary-source research lead; exclude from verified round-size and investor analytics pending primary-source confirmation."
+  }
+]
