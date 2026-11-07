@@ -1,0 +1,7 @@
+interface:
+  display_name: "Venture Scout"
+  short_description: "Verify seed rounds and run evidence-based startup diligence."
+  brand_color: "#0F766E"
+  default_prompt: "Use Venture Scout to research San Francisco seed-stage startups and produce a sourced investment diligence brief."
+policy:
+  allow_implicit_invocation: true
