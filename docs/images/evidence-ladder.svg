@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="370" viewBox="0 0 1040 370" role="img" aria-labelledby="title desc">
+  <title id="title">Venture Scout evidence hierarchy</title>
+  <desc id="desc">A four-level source hierarchy: primary company or investor announcements and regulator documents at the top, independent reporting next, databases and roundups as leads, social posts and search snippets as weak leads. SEC Form D is shown separately as an offering filing, not automatically a seed round.</desc>
+  <rect width="1040" height="370" rx="20" fill="#f7f9fc"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="42" y="43" font-size="19" font-weight="800" fill="#1c3550">Use the source that can actually prove the claim</text>
+    <rect x="42" y="66" width="620" height="58" rx="10" fill="#0f766e"/><text x="64" y="91" font-size="14" font-weight="800" fill="#fff">1 · PRIMARY EVIDENCE</text><text x="64" y="109" font-size="11" fill="#d8fff8">Company / investor announcement · official product or customer material · regulator filing</text>
+    <rect x="42" y="134" width="560" height="58" rx="10" fill="#2563a7"/><text x="64" y="159" font-size="14" font-weight="800" fill="#fff">2 · INDEPENDENT REPORTING</text><text x="64" y="177" font-size="11" fill="#e2efff">Reputable publication, ideally with named sources and direct confirmation</text>
+    <rect x="42" y="202" width="500" height="58" rx="10" fill="#b7791f"/><text x="64" y="227" font-size="14" font-weight="800" fill="#fff">3 · DATABASES &amp; ROUNDUPS</text><text x="64" y="245" font-size="11" fill="#fff3dc">Useful for finding leads; verify the actual round before counting it</text>
+    <rect x="42" y="270" width="440" height="58" rx="10" fill="#64748b"/><text x="64" y="295" font-size="14" font-weight="800" fill="#fff">4 · SOCIAL POSTS &amp; SEARCH SNIPPETS</text><text x="64" y="313" font-size="11" fill="#eef2f7">Starting points only · easy to misread or repeat an unsupported claim</text>
+    <rect x="704" y="66" width="294" height="262" rx="14" fill="#fff" stroke="#d8e1eb" stroke-width="1.5"/><rect x="728" y="90" width="246" height="33" rx="7" fill="#fff3dc"/>
+    <text x="851" y="111" text-anchor="middle" font-size="12" font-weight="800" fill="#8a5b13">KEEP SEC FORM D SEPARATE</text>
+    <text x="733" y="158" font-size="13" font-weight="700" fill="#1c3550">What it can tell you</text><text x="733" y="181" font-size="11" fill="#52677d">An issuer filed a notice for an</text><text x="733" y="197" font-size="11" fill="#52677d">exempt securities offering.</text>
+    <text x="733" y="231" font-size="13" font-weight="700" fill="#1c3550">What it does NOT prove</text><text x="733" y="254" font-size="11" fill="#52677d">That the issuer is an operating</text><text x="733" y="270" font-size="11" fill="#52677d">startup, that the round is seed,</text><text x="733" y="286" font-size="11" fill="#52677d">or that the maximum offering</text><text x="733" y="302" font-size="11" fill="#52677d">amount was actually sold.</text>
+  </g>
+</svg>
