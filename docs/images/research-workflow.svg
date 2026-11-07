@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="270" viewBox="0 0 1280 270" role="img" aria-labelledby="title desc">
+  <title id="title">Venture Scout research workflow</title>
+  <desc id="desc">Six connected steps: discover a candidate, verify its funding and headquarters, analyse the business, score supported evidence, write a memo, and learn from later outcomes.</desc>
+  <defs><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#25bba7"/><stop offset="1" stop-color="#4778e6"/></linearGradient></defs>
+  <rect width="1280" height="270" rx="20" fill="#f5f8fc"/>
+  <path d="M150 104H1130" stroke="url(#line)" stroke-width="5" stroke-linecap="round"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <rect x="40" y="44" width="180" height="126" rx="15" fill="#fff" stroke="#dce5ef"/><circle cx="130" cy="104" r="29" fill="#e4f7f3"/><text x="130" y="112" font-size="25" fill="#118e80">⌕</text><text x="130" y="197" font-size="15" font-weight="700" fill="#19324c">1. Discover</text><text x="130" y="218" font-size="11" fill="#657c94">Find candidate companies</text>
+    <rect x="246" y="44" width="180" height="126" rx="15" fill="#fff" stroke="#dce5ef"/><circle cx="336" cy="104" r="29" fill="#e7efff"/><text x="336" y="111" font-size="23" fill="#3768ca">✓</text><text x="336" y="197" font-size="15" font-weight="700" fill="#19324c">2. Verify</text><text x="336" y="218" font-size="11" fill="#657c94">Check primary sources</text>
+    <rect x="452" y="44" width="180" height="126" rx="15" fill="#fff" stroke="#dce5ef"/><circle cx="542" cy="104" r="29" fill="#fff2dd"/><text x="542" y="112" font-size="23" fill="#b57b19">⌕</text><text x="542" y="197" font-size="15" font-weight="700" fill="#19324c">3. Analyse</text><text x="542" y="218" font-size="11" fill="#657c94">Understand product + market</text>
+    <rect x="658" y="44" width="180" height="126" rx="15" fill="#fff" stroke="#dce5ef"/><circle cx="748" cy="104" r="29" fill="#e8e9ff"/><text x="748" y="111" font-size="22" fill="#6463c9">★</text><text x="748" y="197" font-size="15" font-weight="700" fill="#19324c">4. Score</text><text x="748" y="218" font-size="11" fill="#657c94">Rate only supported claims</text>
+    <rect x="864" y="44" width="180" height="126" rx="15" fill="#fff" stroke="#dce5ef"/><circle cx="954" cy="104" r="29" fill="#e5f4ff"/><text x="954" y="111" font-size="22" fill="#2377ae">▤</text><text x="954" y="197" font-size="15" font-weight="700" fill="#19324c">5. Memo</text><text x="954" y="218" font-size="11" fill="#657c94">Write the investment case</text>
+    <rect x="1070" y="44" width="180" height="126" rx="15" fill="#fff" stroke="#dce5ef"/><circle cx="1160" cy="104" r="29" fill="#e3f5e8"/><text x="1160" y="112" font-size="23" fill="#27844e">↗</text><text x="1160" y="197" font-size="15" font-weight="700" fill="#19324c">6. Learn</text><text x="1160" y="218" font-size="11" fill="#657c94">Track later company outcomes</text>
+  </g>
+</svg>
