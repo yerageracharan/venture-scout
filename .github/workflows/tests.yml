@@ -19,3 +19,5 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: pip install -r requirements.txt -r requirements-dev.txt
       - run: python -m pytest -q
+      - run: python skills/venture-scout/scripts/validate_skill.py
+      - run: python -m py_compile venture_scout/mcp_server.py
