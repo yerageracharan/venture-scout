@@ -135,3 +135,17 @@ venture-scout/
 - [a16z — Aligning startup metrics with stage of maturity](https://a16z.com/aligning-startup-metrics-with-stage-of-maturity-beyond-labels-for-fundraising-rounds/)
 - [SEC — What is Form D?](https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/what-form-d)
 - [SEC — EDGAR APIs](https://www.sec.gov/search-filings/edgar-application-programming-interfaces)
+
+
+## Portable Agent Skill: Claude, ChatGPT desktop/Codex, and local LLMs
+
+Venture Scout now includes a reusable Agent Skill following the open Agent Skills format.
+
+- Canonical skill: [skills/venture-scout](skills/venture-scout/)
+- Installation guide: [SKILL_INSTALL.md](SKILL_INSTALL.md)
+- Claude Code discovery entry: [.claude/skills/venture-scout](.claude/skills/venture-scout/)
+- ChatGPT desktop / Codex discovery entry: [.agents/skills/venture-scout](.agents/skills/venture-scout/)
+- Local LLM system prompt: [prompts/venture-scout-system-prompt.md](prompts/venture-scout-system-prompt.md)
+- Optional local MCP server: [venture_scout/mcp_server.py](venture_scout/mcp_server.py)
+
+For Claude.ai, upload the standalone skill ZIP supplied with this project under **Customize → Skills → Create skill → Upload a skill**. For Claude Code and Codex, use the included installer script. Local models can use the system prompt or connect to the MCP server if their host supports MCP. A skill does not automatically grant web access; connect a browser/search tool for fresh funding research.
