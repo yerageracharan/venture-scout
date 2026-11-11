@@ -1,23 +1,55 @@
 name: Tests
+
 on:
   push:
+    branches: [main]
+    paths:
+      - "venture_scout/**"
+      - "tests/**"
+      - "skills/**"
+      - "requirements*.txt"
+      - "pyproject.toml"
+      - ".github/workflows/tests.yml"
   pull_request:
+    paths:
+      - "venture_scout/**"
+      - "tests/**"
+      - "skills/**"
+      - "requirements*.txt"
+      - "pyproject.toml"
+      - ".github/workflows/tests.yml"
   workflow_dispatch:
+
 permissions:
   contents: read
+
+concurrency:
+  group: venture-scout-tests-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.11", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install --upgrade pip
-      - run: pip install -r requirements.txt -r requirements-dev.txt
-      - run: python -m pytest -q
-      - run: python skills/venture-scout/scripts/validate_skill.py
-      - run: python -m py_compile venture_scout/mcp_server.py
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt -r requirements-dev.txt
+      - name: Run tests
+        run: python -m pytest -q
+      - name: Validate the reusable skill
+        run: python skills/venture-scout/scripts/validate_skill.py
+      - name: Compile the MCP server
+        run: python -m py_compile venture_scout/mcp_server.py
