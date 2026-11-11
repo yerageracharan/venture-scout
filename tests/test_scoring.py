@@ -1,4 +1,5 @@
 import unittest
+
 from venture_scout.models import Company, DimensionEvidence, DIMENSIONS
 from venture_scout.scoring import score_company, diligence_gaps
 
@@ -42,3 +43,25 @@ class ScoringTests(unittest.TestCase):
         self.assertTrue(any("Founder-market fit" in gap for gap in gaps))
         self.assertTrue(any("Customer / usage evidence" in gap for gap in gaps))
         self.assertTrue(any("No source URLs" in gap for gap in gaps))
+
+    def test_non_integer_ratings_are_not_coerced(self):
+        for invalid in ("5", 5.0, 4.5, True, False):
+            dimensions = {key: DimensionEvidence(rating=invalid, evidence="Evidence logged") for key in DIMENSIONS}
+            result = score_company(Company(name="Imported Co", dimensions=dimensions))
+            self.assertIsNone(result["score"], msg=f"Unexpectedly accepted {invalid!r}")
+            self.assertEqual(result["coverage"], 0)
+
+    def test_malformed_evidence_is_treated_as_missing_not_crashing(self):
+        dimensions = {key: DimensionEvidence(rating=5, evidence=None) for key in DIMENSIONS}
+        result = score_company(Company(name="Malformed Co", dimensions=dimensions))
+        self.assertIsNone(result["score"])
+        self.assertEqual(result["coverage"], 0)
+
+    def test_invalid_ratings_appear_as_unassessed_gaps(self):
+        dimensions = {"market": DimensionEvidence(rating=6, evidence="Some text")}
+        gaps = diligence_gaps(Company(name="Invalid Co", dimensions=dimensions))
+        self.assertTrue(any("Unassessed: Market size & urgency" in gap for gap in gaps))
+
+
+if __name__ == "__main__":
+    unittest.main()

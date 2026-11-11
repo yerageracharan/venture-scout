@@ -1,6 +1,17 @@
 from __future__ import annotations
+
 from typing import Any
+
 from .models import Company, DIMENSIONS
+
+
+def _valid_rating(rating: Any) -> bool:
+    """Accept only integer analyst ratings from 1 through 5.
+
+    In particular, bool is an int subclass in Python, and strings such as "5"
+    should not silently become valid ratings from an imported payload.
+    """
+    return isinstance(rating, int) and not isinstance(rating, bool) and 1 <= rating <= 5
 
 
 def score_company(company: Company) -> dict[str, Any]:
@@ -10,18 +21,19 @@ def score_company(company: Company) -> dict[str, Any]:
     for key, spec in DIMENSIONS.items():
         ev = company.dimensions.get(key)
         rating = ev.rating if ev else None
-        valid = rating is not None and 1 <= int(rating) <= 5 and bool(ev and ev.evidence.strip())
+        evidence = ev.evidence if ev and isinstance(ev.evidence, str) else ""
+        valid = _valid_rating(rating) and bool(evidence.strip())
         if valid:
-            weighted += (int(rating) / 5.0) * spec["weight"]
+            weighted += (rating / 5.0) * spec["weight"]
             assessed_weight += spec["weight"]
         details.append({
             "key": key,
             "label": spec["label"],
             "weight": spec["weight"],
-            "rating": int(rating) if valid else None,
-            "weighted_points": round((int(rating) / 5.0) * spec["weight"], 2) if valid else None,
-            "evidence": ev.evidence if ev else "",
-            "source_urls": ev.source_urls if ev else [],
+            "rating": rating if valid else None,
+            "weighted_points": round((rating / 5.0) * spec["weight"], 2) if valid else None,
+            "evidence": evidence,
+            "source_urls": ev.source_urls if ev and isinstance(ev.source_urls, list) else [],
         })
     score = round(weighted / assessed_weight * 100, 1) if assessed_weight else None
     coverage = round(assessed_weight, 1)
@@ -57,12 +69,16 @@ def diligence_gaps(company: Company) -> list[str]:
         "Unit economics / capital intensity": company.economics,
         "Risks and failure modes": company.risks,
     }
-    gaps.extend([f"Missing: {label}" for label, value in critical_fields.items() if not value.strip()])
+    gaps.extend([
+        f"Missing: {label}"
+        for label, value in critical_fields.items()
+        if not isinstance(value, str) or not value.strip()
+    ])
     for key, spec in DIMENSIONS.items():
         ev = company.dimensions.get(key)
-        if not ev or ev.rating is None:
+        if not ev or not _valid_rating(ev.rating):
             gaps.append(f"Unassessed: {spec['label']}")
-        elif not ev.evidence.strip():
+        elif not isinstance(ev.evidence, str) or not ev.evidence.strip():
             gaps.append(f"Evidence missing for: {spec['label']}")
     if not company.sources:
         gaps.append("No source URLs attached; verify funding, location, product and traction claims.")
