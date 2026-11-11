@@ -49,6 +49,11 @@ The dashboard works without an AI API key. The Agent Skill can use the host assi
 
 ## The research process
 
+![Venture Scout diligence pipeline](docs/visuals/01-diligence-pipeline.svg)
+
+*Move from a defined thesis to source collection, claim extraction, and a caveated diligence memo.*
+
+
 This is the full workflow, from discovering a company to learning what happened after its seed round.
 
 <img src="docs/images/research-workflow.svg" alt="The six-step Venture Scout process: discover, verify, analyse, score, memo, and learn" width="100%" />
@@ -65,6 +70,11 @@ This is the full workflow, from discovering a company to learning what happened 
 The point is not to produce the highest score. The point is to make the reasoning inspectable and show exactly where confidence is limited.
 
 ## Evidence before conclusions
+
+![Venture Scout evidence ladder](docs/visuals/02-evidence-ladder.svg)
+
+*Rank primary records, company statements, independent coverage, and hypotheses separately.*
+
 
 Venture Scout keeps the quality of a source separate from the attractiveness of a company. A funding headline can be a useful starting point, but it does not prove that a company has product-market fit or is a good investment.
 
