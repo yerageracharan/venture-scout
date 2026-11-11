@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose a research, diligence, or evidence workflow improvement.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Research or diligence problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and source model
+      description: Explain source quality, source dates, and how unknowns remain visible.
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Validation plan and trade-offs
+    validations:
+      required: true

@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible source, scoring, or diligence-report defect.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic company profiles and public source URLs. Do not attach confidential pitch decks, private founder data, or API keys."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include synthetic company data, source dates/URLs, and exact command or UI steps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result and redacted logs
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Source ingestion
+        - Scoring / coverage
+        - Diligence gaps
+        - Streamlit UI
+        - MCP / skill integration
+        - Export / reporting
+        - Other
+    validations:
+      required: true
