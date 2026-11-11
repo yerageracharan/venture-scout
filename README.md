@@ -25,6 +25,8 @@
 
 ## What is Venture Scout?
 
+**[Documentation and maintainer map](docs/README.md)** · [Agent specification](AGENT_SPEC.md) · [Reusable skill](skills/venture-scout/SKILL.md)
+
 Venture Scout is an open-source research workspace for finding and evaluating early-stage startups. It focuses on publicly announced **pre-seed and seed funding**, with a starter research universe centred on San Francisco.
 
 Think of it as a research assistant with a strict rule: **a claim is not a fact just because it appears in a headline.**
