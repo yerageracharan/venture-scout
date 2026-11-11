@@ -47,7 +47,13 @@ def discover_form_d(start_date: date, end_date: date, user_agent: str, max_filin
     Form D records an exempt securities offering. It is not proof of a priced seed round,
     a venture round label, or the final amount raised. Keep it as a separate signal.
     """
-    if not user_agent or "@" not in user_agent:
+    if not isinstance(start_date, date) or not isinstance(end_date, date):
+        raise TypeError("start_date and end_date must be datetime.date values")
+    if start_date > end_date:
+        raise ValueError("start_date must be on or before end_date")
+    if isinstance(max_filings, bool) or not isinstance(max_filings, int) or not 1 <= max_filings <= 1000:
+        raise ValueError("max_filings must be an integer between 1 and 1000")
+    if not isinstance(user_agent, str) or not user_agent.strip() or "@" not in user_agent:
         raise ValueError("Set SEC_USER_AGENT to a descriptive app name and contact email per SEC fair-access guidance.")
     indexes: list[tuple[int, int]] = []
     cursor = date(start_date.year, start_date.month, 1)
